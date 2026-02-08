@@ -1,6 +1,6 @@
 /* ================= MOBILE HEADER ACTIONS ================= */
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   body {
     padding-bottom: 70px;
   }
