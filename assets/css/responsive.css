@@ -13,7 +13,7 @@
     background: var(--white);
     justify-content: space-around;
     padding: 12px 0;
-    box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.12);
+    box-shadow: var(--shadow);
     z-index: 999;
   }
 
@@ -44,7 +44,7 @@
     height: 100%;
     background: var(--white);
     padding: 25px;
-    box-shadow: 5px 0 20px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--shadow);
     transition: var(--transition);
     z-index: 2000;
   }
@@ -72,10 +72,7 @@
     align-items: center;
   }
 
-  /* Overlay show */
-  .overlay {
-    display: block;
-  }
+
 }
 
 /* ================= HERO RESPONSIVE ================= */
