@@ -126,14 +126,16 @@
 }
 
 /* ===================================== */
-/* ✅ MOBILE + TABLET NAVBAR SIDEBAR      */
+/* MOBILE + TABLET NAVBAR SIDEBAR      */
 /* ===================================== */
 @media (max-width: 991px) {
   /* Hamburger Visible */
   .navbar-open-btn {
     display: block;
   }
-
+  .nav-close-btn {
+    font-size: 30px;
+  }
   /* Sidebar Navbar */
   .navbar {
     position: fixed;
@@ -168,57 +170,8 @@
 }
 
 /* ===================================== */
-/* ✅ DESKTOP (992px and above)           */
+/* DESKTOP (992px and above)           */
 /* ===================================== */
-@media (min-width: 992px) {
-  /* Hamburger Hidden */
-  .navbar-open-btn {
-    display: none;
-  }
-
-  /* Navbar Normal */
-  .navbar {
-    position: static;
-    display: flex;
-    height: auto;
-    width: auto;
-    padding: 0;
-    box-shadow: none;
-  }
-
-  .navbar-top {
-    display: none;
-  }
-
-  /* Navbar Horizontal */
-  .navbar-list {
-    flex-direction: row;
-    gap: 25px;
-    margin-top: 0;
-  }
-
-  /* Overlay Disabled */
-  .overlay {
-    display: none;
-  }
-
-  /* Featured Grid Desktop */
-  .featured-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  /* Footer Grid Desktop */
-  .footer-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  /* Hero Title Bigger */
-  .hero-title {
-    font-size: 3.5rem;
-  }
-}
-
-
 
 /* Product Grid Responsive */
 

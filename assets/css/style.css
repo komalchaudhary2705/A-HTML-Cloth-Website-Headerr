@@ -292,7 +292,7 @@ button {
 
 .products {
   padding: 90px 0;
-  background: var(--cultured);
+  /* background: var(--cultured); */
 }
 
 .product-grid {
@@ -303,15 +303,16 @@ button {
 
 /* Product Card Box */
 .product-card {
+  border: 1px solid #e6e4e4;
   background: var(--white);
-  border-radius: 18px;
+  border-radius: 5px;
   overflow: hidden;
   box-shadow: var(--shadow);
   transition: var(--transition);
 }
 
 .product-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-2px);
 }
 
 /* Product Image */
@@ -358,7 +359,7 @@ button {
 }
 
 .product-actions button:hover {
-  background: var(--ocean-green);
+  background: var(--ocean-brown);
   color: var(--white);
 }
 
@@ -380,7 +381,6 @@ button {
   color: var(--ocean-green);
 }
 
-
 /* ================= NEWSLETTER SECTION ================= */
 
 .newsletter {
@@ -392,7 +392,8 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  margin-bottom: 200px;
+  margin-top: 30px;
+  margin-bottom: 100px;
 }
 
 .newsletter-box {
@@ -447,7 +448,6 @@ button {
 .btn-newsletter:hover {
   background: #059669;
 }
-
 
 /* ================= FOOTER ================= */
 
