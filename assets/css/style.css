@@ -107,7 +107,9 @@ button {
 .header-action-btn:hover {
   color: var(--ocean-green);
 }
-
+.navbar-top{
+  display: none;
+}
 /* ================= NAVBAR DESKTOP ================= */
 
 .navbar {
