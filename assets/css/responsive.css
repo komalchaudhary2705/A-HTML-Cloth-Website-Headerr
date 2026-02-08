@@ -1,10 +1,17 @@
-/* ================= MOBILE HEADER ACTIONS ================= */
+/* ============================= */
+/* ✅ RESPONSIVE DESIGN SYSTEM   */
+/* ============================= */
 
-@media (max-width: 768px) {
+/* ===================================== */
+/* ✅ MOBILE (0px → 767px)               */
+/* ===================================== */
+@media (max-width: 767px) {
+  /* Body space for bottom menu */
   body {
-    padding-bottom: 70px;
+    padding-bottom: 80px;
   }
 
+  /* Header Actions Bottom Bar */
   .header-actions {
     position: fixed;
     bottom: 0;
@@ -18,43 +25,116 @@
   }
 
   .header-action-btn {
-    font-size: 20px;
+    flex-direction: column;
+    font-size: 22px;
   }
 
   .header-action-btn span {
     display: block;
     font-size: 12px;
   }
-  /* ========================= */
-  /* =======HERO RESPONSIVE ========== */
 
+  /* Hero Section */
   .hero-container {
     flex-direction: column;
     text-align: center;
   }
 
   .hero-title {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
 
   .hero-buttons {
     justify-content: center;
   }
 
-  .hero-image {
+  /* Featured Section */
+  .featured-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Newsletter */
+  .newsletter-box {
+    flex-direction: column;
     text-align: center;
+    padding: 35px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .newsletter-form input,
+  .btn-newsletter {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .footer-contact p {
+    justify-content: center;
   }
 }
 
-/* ================= MOBILE NAVBAR SIDEBAR ================= */
+/* ===================================== */
+/* ✅ TABLET (768px → 991px)             */
+/* ===================================== */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Header Actions Top */
+  .header-actions {
+    position: static;
+    width: auto;
+    gap: 20px;
+    box-shadow: none;
+    padding: 0;
+  }
 
-@media (max-width: 992px) {
-  /* Hamburger visible */
+  .header-action-btn {
+    flex-direction: row;
+    font-size: 18px;
+  }
+
+  .header-action-btn span {
+    display: none;
+  }
+
+  /* Hero Layout */
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  /* Featured Grid */
+  .featured-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Footer Grid */
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===================================== */
+/* ✅ MOBILE + TABLET NAVBAR SIDEBAR      */
+/* ===================================== */
+@media (max-width: 991px) {
+  /* Hamburger Visible */
   .navbar-open-btn {
     display: block;
   }
 
-  /* Navbar sidebar */
+  /* Sidebar Navbar */
   .navbar {
     position: fixed;
     top: 0;
@@ -72,16 +152,11 @@
     left: 0;
   }
 
-  /* Navbar links vertical */
+  /* Navbar Links Vertical */
   .navbar-list {
     flex-direction: column;
     gap: 20px;
     margin-top: 50px;
-  }
-
-  /* Close Button */
-  .nav-close-btn {
-    font-size: 25px;
   }
 
   /* Navbar Top */
@@ -90,15 +165,80 @@
     justify-content: space-between;
     align-items: center;
   }
-  .hero {
-    background: var(--cultured);
-    padding: 90px 0 80px;
+}
+
+/* ===================================== */
+/* ✅ DESKTOP (992px and above)           */
+/* ===================================== */
+@media (min-width: 992px) {
+  /* Hamburger Hidden */
+  .navbar-open-btn {
+    display: none;
   }
-   .hero-container {
-    flex-direction: column;
-    text-align: center;
+
+  /* Navbar Normal */
+  .navbar {
+    position: static;
+    display: flex;
+    height: auto;
+    width: auto;
+    padding: 0;
+    box-shadow: none;
   }
-  .hero-buttons {
-    justify-content: center;
+
+  .navbar-top {
+    display: none;
+  }
+
+  /* Navbar Horizontal */
+  .navbar-list {
+    flex-direction: row;
+    gap: 25px;
+    margin-top: 0;
+  }
+
+  /* Overlay Disabled */
+  .overlay {
+    display: none;
+  }
+
+  /* Featured Grid Desktop */
+  .featured-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Footer Grid Desktop */
+  .footer-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Hero Title Bigger */
+  .hero-title {
+    font-size: 3.5rem;
+  }
+}
+
+
+
+/* Product Grid Responsive */
+
+/* Mobile */
+@media (max-width: 767px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
