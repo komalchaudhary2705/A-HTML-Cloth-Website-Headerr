@@ -1,80 +1,100 @@
-/* ================= RESPONSIVE DESIGN ================= */
+/* ================= MOBILE HEADER ACTIONS ================= */
 
-/* Tablet */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 70px;
+  }
+
   .header-actions {
-    position: static;
-    width: auto;
-    flex-direction: row;
-    gap: 25px;
-    padding: 0;
-    box-shadow: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--white);
+    justify-content: space-around;
+    padding: 12px 0;
+    box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.12);
+    z-index: 999;
   }
 
   .header-action-btn {
-    flex-direction: row;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .header-action-btn span {
-    font-size: 14px;
+    display: block;
+    font-size: 12px;
   }
 }
 
-/* Desktop */
-@media (min-width: 992px) {
+/* ================= MOBILE NAVBAR SIDEBAR ================= */
+
+@media (max-width: 992px) {
+  /* Hamburger visible */
   .navbar-open-btn {
-    display: none;
+    display: block;
   }
 
+  /* Navbar sidebar */
   .navbar {
-    position: static;
-    width: auto;
-    height: auto;
-    box-shadow: none;
-    display: block;
-    padding: 0;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 280px;
+    height: 100%;
+    background: var(--white);
+    padding: 25px;
+    box-shadow: 5px 0 20px rgba(0, 0, 0, 0.15);
+    transition: var(--transition);
+    z-index: 2000;
+  }
+
+  .navbar.active {
     left: 0;
   }
 
-  .navbar-top {
-    display: none;
-  }
-
+  /* Navbar links vertical */
   .navbar-list {
-    flex-direction: row;
-    gap: 25px;
-    margin-top: 0;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
   }
 
+  /* Close Button */
+  .nav-close-btn {
+    font-size: 25px;
+  }
+
+  /* Navbar Top */
+  .navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Overlay show */
   .overlay {
-    display: none;
+    display: block;
   }
 }
 
 /* ================= HERO RESPONSIVE ================= */
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .hero-container {
-    flex-direction: row;
-    text-align: left;
-    justify-content: space-between;
-  }
-
-  .hero-content {
-    flex: 1;
+    flex-direction: column;
+    text-align: center;
   }
 
   .hero-title {
-    font-size: 3.2rem;
+    font-size: 2.4rem;
   }
 
   .hero-buttons {
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .hero-image {
-    flex: 1;
-    text-align: right;
+    text-align: center;
   }
 }
