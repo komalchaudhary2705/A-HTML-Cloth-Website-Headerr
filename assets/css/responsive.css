@@ -25,10 +25,10 @@
     display: block;
     font-size: 12px;
   }
-/* ========================= */
-/* =======HERO RESPONSIVE ========== */
+  /* ========================= */
+  /* =======HERO RESPONSIVE ========== */
 
-    .hero-container {
+  .hero-container {
     flex-direction: column;
     text-align: center;
   }
@@ -94,6 +94,11 @@
     background: var(--cultured);
     padding: 90px 0 80px;
   }
+   .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-buttons {
+    justify-content: center;
+  }
 }
-
-
