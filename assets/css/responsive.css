@@ -1,0 +1,80 @@
+/* ================= RESPONSIVE DESIGN ================= */
+
+/* Tablet */
+@media (min-width: 768px) {
+  .header-actions {
+    position: static;
+    width: auto;
+    flex-direction: row;
+    gap: 25px;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .header-action-btn {
+    flex-direction: row;
+    font-size: 18px;
+  }
+
+  .header-action-btn span {
+    font-size: 14px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .navbar-open-btn {
+    display: none;
+  }
+
+  .navbar {
+    position: static;
+    width: auto;
+    height: auto;
+    box-shadow: none;
+    display: block;
+    padding: 0;
+    left: 0;
+  }
+
+  .navbar-top {
+    display: none;
+  }
+
+  .navbar-list {
+    flex-direction: row;
+    gap: 25px;
+    margin-top: 0;
+  }
+
+  .overlay {
+    display: none;
+  }
+}
+
+/* ================= HERO RESPONSIVE ================= */
+
+@media (min-width: 768px) {
+  .hero-container {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+  }
+
+  .hero-content {
+    flex: 1;
+  }
+
+  .hero-title {
+    font-size: 3.2rem;
+  }
+
+  .hero-buttons {
+    justify-content: flex-start;
+  }
+
+  .hero-image {
+    flex: 1;
+    text-align: right;
+  }
+}
