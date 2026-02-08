@@ -4,7 +4,7 @@
   --middle-blue-green: hsl(176, 35%, 63%);
   --sonic-silver: hsl(0, 0%, 44%);
   --eerie-black: hsl(0, 0%, 9%);
-  --ocean-green: hsl(22, 13%, 61%);
+  --ocean-brown: hsl(22, 13%, 61%);
 
   --cultured: hsl(0, 0%, 96%);
   --white: hsl(0, 0%, 100%);
@@ -79,8 +79,7 @@ button {
 
 .logo {
   font-size: 30px;
-  font-weight: 700;
-  color: var(--ocean-green);
+  color: var(--ocean-brown);
 }
 
 /* ================= HEADER ACTION BUTTONS ================= */
@@ -105,7 +104,7 @@ button {
 }
 
 .header-action-btn:hover {
-  color: var(--ocean-green);
+  color: var(--ocean-brown);
 }
 .navbar-top{
   display: none;
@@ -129,7 +128,7 @@ button {
 }
 
 .navbar-link:hover {
-  color: var(--ocean-green);
+  color: var(--ocean-brown);
 }
 
 /* Hamburger hidden on desktop */
@@ -210,7 +209,7 @@ button {
 /* Primary Button */
 
 .btn-primary {
-  background: var(--ocean-green);
+  background: var(--ocean-brown);
   color: var(--white);
 }
 
@@ -221,12 +220,12 @@ button {
 /* Outline Button */
 
 .btn-outline {
-  border: 2px solid var(--ocean-green);
-  color: var(--ocean-green);
+  border: 2px solid var(--ocean-brown);
+  color: var(--ocean-brown);
 }
 
 .btn-outline:hover {
-  background: var(--ocean-green);
+  background: var(--ocean-brown);
   color: var(--white);
 }
 
