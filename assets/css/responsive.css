@@ -1,17 +1,12 @@
-/* ============================= */
-/* ✅ RESPONSIVE DESIGN SYSTEM   */
-/* ============================= */
-
 /* ===================================== */
-/* ✅ MOBILE (0px → 767px)               */
+/* MOBILE (0px → 767px)                  */
 /* ===================================== */
 @media (max-width: 767px) {
-  /* Body space for bottom menu */
   body {
     padding-bottom: 80px;
   }
 
-  /* Header Actions Bottom Bar */
+  /* Header Bottom Actions */
   .header-actions {
     position: fixed;
     bottom: 0;
@@ -48,8 +43,13 @@
     justify-content: center;
   }
 
-  /* Featured Section */
+  /* Featured Grid */
   .featured-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Product Grid */
+  .product-grid {
     grid-template-columns: 1fr;
   }
 
@@ -88,10 +88,9 @@
 }
 
 /* ===================================== */
-/* ✅ TABLET (768px → 991px)             */
+/* TABLET (768px → 991px)                */
 /* ===================================== */
 @media (min-width: 768px) and (max-width: 991px) {
-  /* Header Actions Top */
   .header-actions {
     position: static;
     width: auto;
@@ -109,13 +108,18 @@
     display: none;
   }
 
-  /* Hero Layout */
+  /* Hero */
   .hero-title {
     font-size: 2.8rem;
   }
 
   /* Featured Grid */
   .featured-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Product Grid */
+  .product-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -126,17 +130,17 @@
 }
 
 /* ===================================== */
-/* MOBILE + TABLET NAVBAR SIDEBAR      */
+/* MOBILE + TABLET NAVBAR SIDEBAR         */
 /* ===================================== */
 @media (max-width: 991px) {
-  /* Hamburger Visible */
   .navbar-open-btn {
     display: block;
   }
+
   .nav-close-btn {
     font-size: 30px;
   }
-  /* Sidebar Navbar */
+
   .navbar {
     position: fixed;
     top: 0;
@@ -154,14 +158,12 @@
     left: 0;
   }
 
-  /* Navbar Links Vertical */
   .navbar-list {
     flex-direction: column;
     gap: 20px;
     margin-top: 50px;
   }
 
-  /* Navbar Top */
   .navbar-top {
     display: flex;
     justify-content: space-between;
@@ -170,28 +172,45 @@
 }
 
 /* ===================================== */
-/* DESKTOP (992px and above)           */
+/* DESKTOP (992px and above)             */
 /* ===================================== */
-
-/* Product Grid Responsive */
-
-/* Mobile */
-@media (max-width: 767px) {
-  .product-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Tablet */
-@media (min-width: 768px) and (max-width: 991px) {
-  .product-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Desktop */
 @media (min-width: 992px) {
+  .navbar-open-btn {
+    display: none;
+  }
+
+  .navbar {
+    position: static;
+    display: flex;
+    height: auto;
+    width: auto;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .navbar-top {
+    display: none;
+  }
+
+  .navbar-list {
+    flex-direction: row;
+    gap: 25px;
+    margin-top: 0;
+  }
+
+  .featured-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
   .product-grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .hero-title {
+    font-size: 3.5rem;
   }
 }
