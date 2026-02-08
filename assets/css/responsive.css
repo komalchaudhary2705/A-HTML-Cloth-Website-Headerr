@@ -25,6 +25,25 @@
     display: block;
     font-size: 12px;
   }
+/* ========================= */
+/* =======HERO RESPONSIVE ========== */
+
+    .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2.4rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-image {
+    text-align: center;
+  }
 }
 
 /* ================= MOBILE NAVBAR SIDEBAR ================= */
@@ -71,27 +90,10 @@
     justify-content: space-between;
     align-items: center;
   }
-
-
-}
-
-/* ================= HERO RESPONSIVE ================= */
-
-@media (max-width: 768px) {
-  .hero-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-title {
-    font-size: 2.4rem;
-  }
-
-  .hero-buttons {
-    justify-content: center;
-  }
-
-  .hero-image {
-    text-align: center;
+  .hero {
+    background: var(--cultured);
+    padding: 90px 0 80px;
   }
 }
+
+

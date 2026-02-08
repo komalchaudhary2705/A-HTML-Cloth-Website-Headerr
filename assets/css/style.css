@@ -106,12 +106,10 @@ button {
 .header-action-btn:hover {
   color: var(--ocean-brown);
 }
-.navbar-top{
+.navbar-top {
   display: none;
 }
 /* ================= NAVBAR DESKTOP ================= */
-
-
 
 .navbar-list {
   display: flex;
@@ -157,7 +155,7 @@ button {
 
 .hero {
   background: var(--cultured);
-  padding: 120px 0 80px;
+  padding: 70px 0 80px;
 }
 
 .hero-container {
@@ -236,5 +234,5 @@ button {
 
 .hero-image img {
   width: 100%;
-  max-width: 430px;
+  max-width: 500px;
 }
