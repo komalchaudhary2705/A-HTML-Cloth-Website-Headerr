@@ -12,7 +12,10 @@
 
   --ff: "jost", sans-serif;
 }
-
+::selection{
+  background-color: var(--gray);
+  color: white;
+}
 /* ================= RESET ================= */
 * {
   margin: 0;
