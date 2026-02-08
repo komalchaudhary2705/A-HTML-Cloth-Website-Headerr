@@ -166,8 +166,8 @@ button {
 }
 
 .hero-title {
-  font-size: 3.2rem;
-  font-weight: 800;
+  font-size: 25px;
+  /* font-weight: 400; */
   color: var(--dark);
   line-height: 1.2;
 }
